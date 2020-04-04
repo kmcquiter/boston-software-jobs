@@ -9,27 +9,29 @@
  create an if-else statement that if the user did not
  enter an url, then prompt them to use again.
 
-Create a while loop that allows the user to 
-enter multiple corporate logos.
 
  */
 
  function addCompany (){
 
-    while(pastelogo !== 0){
 
-    let pasteLogo = prompt("Copy and paste URL company logo:");
+        let companyLogo = prompt("Copy and paste URL company logo:");
+        if (companyLogo === 0){
+
+
+            prompt("Copy and paste URL company logo:");
+    
+        }
+    
+        else{
+    
+            document.getElementById('company-logos').innerHTML += `<img src ="${companyLogo}"></img>`;
+        }
+    }
+    
   
         
-    if (pasteLogo === 0){
-
-        alert(" Please Copy and paste URL company logo:")
-    }
-
-    else{
-
-        document.getElementById('company-logos').innerHTML += `<img src ="${pasteLogo}"></img>`;
-    }
-}
     
- }
+
+    
+ 

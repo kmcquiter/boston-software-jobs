@@ -5,25 +5,34 @@
     display: flex;
     padding: 16px;
     font-family: sans-serif;
-    color: #808080;
+    box-shadow: 0px 1px grey;
     width: 100%;
-    border-bottom-style: solid;
-
+    
+    
 
 }
 
+
 .navbar-items{
+
     display: flex;
+    padding: 16px;
+    font-size: medium;
+    text-decoration: none;
 }
 
 .navbar-link{
+
     display: flex;
     padding-right: 20px;
+    
 }
 
 .items-right{
+
     display: flex;
     margin-left:auto;
+    color: #808080;
 }
 
 .jumbotron{
@@ -33,12 +42,14 @@
     margin: 1.5em 6em;
 }
 
+
+
 .p {
 
     margin-top: 0;
     margin-bottom: 2rem;
 }
-/* middle page
+/* middle page*/
 
 .main-container{
 
@@ -72,7 +83,9 @@
     
 }
 
-*/
+
+
+
 /* For the compaines page*/
 
 .companies-container{
@@ -83,7 +96,7 @@
 
 
 }
-
+/*
 .middle-compaines-container{
 
     width: 85vw;
@@ -94,3 +107,4 @@
     font-family: sans-serif;
 
 }
+*/
