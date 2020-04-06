@@ -1,9 +1,11 @@
-/* Navbar */
+
 
 .trademark{
 
     margin: 100px;
 }
+/* Navbar */
+
 .navbar {
     background-color:#F8F8F8;
     display: flex;
@@ -100,15 +102,19 @@
 
 
 }
-/*
-.middle-compaines-container{
 
-    width: 85vw;
-    background-color: #EEEEEE;
-    text-align: left;
-    margin: 2% 10% 5% 2%;
-    padding: 2% 1% 5% 8%;
-    font-family: sans-serif;
+#companies-inserted{
 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 20%;
+    margin: 10px;
 }
-*/
+ 
+.company-info{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

@@ -9,29 +9,41 @@
  create an if-else statement that if the user did not
  enter an url, then prompt them to use again.
 
+ *UPDATE*
+
+ Create three empty arrays
+
+ edit the function addCompany() and insert the three prompts
+ push the info from the prompts into the arrays
+ 
 
  */
 
- function addCompany (){
+let nameArr = [];
+let logoArr = [];
+let aboutCompanyArr = [];
+
+function addCompany(){
+
+    let companyName = prompt("Enter the company name:");
+    let companyLogo = prompt("Copy and paste URL company logo:");
+    let aboutCompany = prompt("Say a little about the company:");
+
+    nameArr.push(companyName);
+    logoArr.push(companyLogo);
+    aboutCompanyArr.push(aboutCompany);
+    let logoImgList = [];
+    let companyInfo = "";
+   
 
 
-        let companyLogo = prompt("Copy and paste URL company logo:");
-        if (companyLogo === 0){
+        for(let i=0; i < logoArr.length; i++){
 
+            logoImgList[i] = "<img src='" + logoArr[i] + "' width=150 height=150/>"; 
 
-            prompt("Copy and paste URL company logo:");
-    
         }
-    
-        else{
-    
-            document.getElementById('company-logos').innerHTML += `<img src ="${companyLogo}"></img>`;
+        for(let i=0; i < nameArr.length; i++){
+            companyInfo += "<div class='img-thumbnail company-info'>" + logoImgList[i] + "<br>" + nameArr[i] + "<br/>" + aboutCompanyArr[i] + "</div>";
         }
-    }
-    
-  
-        
-    
-
-    
- 
+        document.getElementById("companies-inserted").innerHTML = companyInfo;
+}
